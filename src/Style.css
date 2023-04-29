@@ -1,0 +1,190 @@
+body{
+    background: -webkit-linear-gradient(90deg, #e14e08,#7a097b,#273389);
+    background: linear-gradient(90deg, #e14e08,#7a097b,#273389);}
+.wrapper {
+    width: 800px;
+    height: 20%;
+    border: 1px solid grey;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    justify-content: space-around;
+    padding: 30px;
+    background: -webkit-linear-gradient(90deg, #ffffff,#85f1ff,#c2f5ff,#ffffff);
+    background: linear-gradient(90deg, #ffffff,#85f1ff,#c2f5ff,#ffffff);
+}
+.cond{
+    width: 50px;
+    height: 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position:sticky;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin: 5px;
+}
+.cond_1 {
+    background: #300b42;
+    border: none;
+    z-index: 1;
+  }
+  .cond_1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #2dc065;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .cond_1:hover {
+    color: #fff;
+  }
+  .cond_1:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .cond_1:active {
+    top: 2px;
+  }
+    
+.block{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 5%;
+}
+h1{
+    position: absolute;
+    margin-top: -35px;
+    left: 400px;
+    background-color: #000000;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+
+}
+input{
+    margin-right: -550px;
+    margin-top: -25px;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input:hover {
+    width: 28%;
+    background-color: rgb(238, 235, 235);
+    transition: all 0.6s;
+    border: 1px solid #777678;
+}
+
+.btn{
+    width: 40px;
+    height: 30px;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin: 5px;
+    
+}
+.btn_1 {
+    background: #300b42;
+    border: none;
+    z-index: 1;
+  }
+  .btn_1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #2dc065;
+    border-radius: 5px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn_1:hover {
+    color: #fff;
+  }
+  .btn_1:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn_1:active {
+    top: 2px;
+  }
+img{
+    border-radius: 10px;
+    border: 4px solid black;
+    box-shadow: 5px 5px 5px #686666
+}
+img:hover {
+border: none;
+cursor: pointer;
+width: 260px;
+height: 210px;
+transition: all 0.3s ;
+box-shadow: none;
+}
+
+
+span  {
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    margin: 16px;
+    margin-top: 15px;
+    position: absolute;
+    font: 800 4em/1 "Oswald", sans-serif;
+    font-size: 30px;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    text-shadow: 0 0 80px rgba(255,255,255,.5);
+    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: aitf 80s linear infinite;
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+}
+
+
+@keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
